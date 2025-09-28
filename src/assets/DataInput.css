@@ -1,0 +1,53 @@
+/* 🎯 Estilos para el formulario de ingreso de datos numéricos */
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+/* 📥 Campo de texto para ingresar números */
+input[type="text"] {
+  width: 280px;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #4f46e5;
+  outline: none;
+}
+
+/* ➕ Botón para agregar datos */
+button {
+  height: 40px;
+  padding: 0 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* ⚠️ Mensaje de error (si decides agregarlo en el futuro) */
+.error {
+  width: 100%;
+  margin-top: 10px;
+  color: #e53935;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 500;
+}

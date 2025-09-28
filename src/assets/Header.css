@@ -1,0 +1,81 @@
+/*  Estilos globales */
+/*  Estilo global del body: fondo suave, tipografía clara y estructura centrada */
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #e0e7ff, #fef3c7);
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Contenedor principal si usas .app-container */
+.app-container {
+  width: 100%;
+  max-width: 960px;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/*  Contenedor del encabezado principal */
+header {
+  background-color: #f9f9f9;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*  Título principal */
+header h1 {
+  margin: 0;
+  font-size: 2.8rem;
+  color: #2c2c2c;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* 📄 Descripción del software */
+header p {
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+  color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+/* 🖼️ Logo dentro del párrafo */
+header p img {
+  width: 32px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+header p img:hover {
+  transform: scale(1.15);
+}
+
+/* 📱 Responsividad para pantallas pequeñas */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  header p {
+    font-size: 1rem;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  header p img {
+    width: 28px;
+  }
+}
