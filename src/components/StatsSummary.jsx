@@ -1,3 +1,4 @@
+import '../assets/StatsSummary.css';
 function StatsSummary({ data }) {
     if (!data || data.length === 0 || data.every(n => n === 0)) {
         return <p>No hay datos disponibles para mostrar estadísticas.</p>;
@@ -7,7 +8,7 @@ function StatsSummary({ data }) {
     console.log("Tipo:", typeof media);
 
     return (
-        <div >
+        <div className='stats-summary'>
             <h2>Resumen de Estadísticas</h2>
             <p>Media: {media.toFixed(2)}</p>
             

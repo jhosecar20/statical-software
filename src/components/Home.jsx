@@ -1,4 +1,4 @@
-
+import '../assets/Home.css'
 function Home(){
     return(
         <main>
