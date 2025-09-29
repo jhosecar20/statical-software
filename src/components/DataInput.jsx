@@ -7,7 +7,7 @@ function DataInput({ onSubmit }) {
 
 
   const handleSubmit = () => {
-    const numbers = inputValue.split(',').map(n => Number(n.trim())).filter(n => !isNaN(n));
+    const numbers = inputValue.split(',').map(n => Number(n.trim())).filter(n => !isNaN(n)).sort((a, b) => a - b);
     
     if (numbers.length === 0) {
       alert('Por favor, ingresa números válidos separados por comas.');

@@ -4,9 +4,7 @@ function StatsSummary({ data }) {
         return <p>No hay datos disponibles para mostrar estadísticas.</p>;
     }
     const media = data.reduce((a, b) => a + b) / data.length;
-    console.log("Media calculada:", media);
-    console.log("Tipo:", typeof media);
-
+    
     return (
         <div className='stats-summary'>
             <h2>Resumen de Estadísticas</h2>

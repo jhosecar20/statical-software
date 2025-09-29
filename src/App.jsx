@@ -7,6 +7,7 @@ import Home from './components/Home.jsx';
 import StatsSummary from './components/StatsSummary.jsx'
 import ChartDisplay from './components/ChartDisplay.jsx';
 import Footer from './components/footer.jsx';
+import CountRepetitions from './components/CountRepetitions.jsx';
 import { useState } from 'react';
 
 
@@ -23,6 +24,7 @@ function App() {
       <Home />
       <DataInput onSubmit={(newData) => setData(newData)} />
       <StatsSummary data={data} />
+      <CountRepetitions data={data} />
       <ChartDisplay data={data} />
       <Footer />
     </div>
