@@ -1,6 +1,7 @@
 import {Bar} from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 import '../assets/ChartDisplay.css';
+import CountRepetitions from './CountRepetitions';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);   
 
@@ -14,6 +15,7 @@ function ChartDisplay({ data }) {
       {
         label: 'Valores',
         data: data,
+        
         backgroundColor: '#4f46e5',
       },
     ],
@@ -21,7 +23,9 @@ function ChartDisplay({ data }) {
   return (
     <div className="chart-container">
         <h3>Gráfico de Datos</h3>
-        <Bar data={chartData} />        
+        <Bar data={chartData} />    
+        <CountRepetitions data={data} />
+            
     </div>
   );
 }
